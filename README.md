@@ -137,8 +137,7 @@ For each rule, the tree begins with a root operator (like `AND` or `OR`) and bra
         /    \     /   \
    age > 30   department = 'Sales'   age < 25   department = 'Marketing'
 ```
- 
- ```
+```
 2. **Rule 2**: `"((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)"`
 
    ```
@@ -158,14 +157,15 @@ For each rule, the tree begins with a root operator (like `AND` or `OR`) and bra
    ```
 
 ### Explanation of the Structure
-```
+
 - **Root Node**: Each rule structure starts with a root logical operator (`AND` or `OR`).
 - **Branching Nodes**: Each logical condition (`AND`, `OR`) leads to branches that represent sub-conditions or other logical operations.
 - **Leaf Nodes**: Conditions (like `age > 30` or `department = 'Marketing'`) are leaf nodes, representing the end points for evaluation.
- ```
+ 
 
 ### Usage
- ```
+ 
+
 ### 1. Creating a Rule
 Use the `create_rule` endpoint with a rule string to generate a rule AST. Sample rule strings:
 - `"((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)"`
@@ -176,10 +176,11 @@ Use the `combine_rules` endpoint with multiple rule strings to create a single, 
 
 ### 3. Evaluating Rules
 With `evaluate_rule`, pass the combined rule's AST and user data to verify eligibility.
- ```
+ 
 ## Test Cases
 
 ### Sample Test Cases
+#### Test Case 1: Create Rule
  ```
 #### Test Case 1: Create Rule
  ```
