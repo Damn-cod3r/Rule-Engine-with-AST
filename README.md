@@ -137,9 +137,9 @@ For each rule, the tree begins with a root operator (like `AND` or `OR`) and bra
         /    \     /   \
    age > 30   department = 'Sales'   age < 25   department = 'Marketing'
 ```
-
+```
 2. **Rule 2**: `"((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)"`
-
+```
    ```
                 AND
               /       \
