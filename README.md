@@ -181,9 +181,7 @@ With `evaluate_rule`, pass the combined rule's AST and user data to verify eligi
 
 ### Sample Test Cases
 #### Test Case 1: Create Rule
- ```
-#### Test Case 1: Create Rule
- ```
+
 - **Rule**: `"age > 50 AND salary < 30000"`
 - **Expected Output**: `{ "AST": { "type": "AND", "left": { "type": "age > 50" }, "right": { "type": "salary < 30000" } } }`
 
